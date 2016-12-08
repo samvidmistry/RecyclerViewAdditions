@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/image"
+        android:orientation="vertical"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+</layout>

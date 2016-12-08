@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="post"
+            type="com.example.samvidmistry.recyclerviewadditions.Post" />
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="@{post.title}"
+            tools:text="Primary title of photo"
+            android:gravity="center_vertical"
+            android:textColor="?android:textColorPrimary"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <TextView
+            android:text="@{post.body}"
+            tools:text="secondary title for photo"
+            android:gravity="center_vertical"
+            android:textColor="?android:textColorSecondary"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+
+</layout>
